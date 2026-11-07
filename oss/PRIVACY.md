@@ -1,10 +1,12 @@
 # RS-MediaPlayer privacy policy
 
-*Effective: 7 November 2026*
+*Effective: 7 November 2026 (updated: Play on TV and Chromecast)*
 
 RS-MediaPlayer needs an account so that your subscription, profiles and lists work on every device you
 use: Mac, iPhone, iPad and Samsung TV. This policy says what is stored, where, why, and how to remove it.
-There is no analytics, no advertising and no tracking, and nothing is sold or shared.
+We run no analytics, advertising or tracking ourselves, and nothing is sold or shared. The one piece of
+someone else's code that collects data is Google's Cast SDK on iPhone and iPad, used for Chromecast; see
+"Chromecast" below.
 
 **Who is responsible:** RS-Development, the developer of RS-MediaPlayer.
 **Contact:** roy@rs-development.nl, or an issue at https://github.com/RoySchultz/rs-mediaplayer.
@@ -21,6 +23,7 @@ There is no analytics, no advertising and no tracking, and nothing is sold or sh
 | **Your sources, encrypted** (server address, username and password of your provider, or a playlist address) | So you don't have to add them on every device. They are encrypted on your device with a key made from your account password. That key never leaves your devices, so **we can't read your sources**. |
 | **What is playing now**: the device and the title of each picture that plays | To count screens for your subscription and show "Watching on another device". Kept only while it plays: removed at most a few minutes after it stops. |
 | **Your subscription**: which product, from which store, until when, and the store's purchase number | So your subscription works on all your devices. |
+| **Play on TV**: what you sent to your TV (which title, from which device) and whether it started | So your TV can play what you chose on your phone or Mac. Kept one day. |
 
 Titles in your lists are linked to a source by a code computed on your device, not by the source's address
 or login. Settings such as buffer, appearance and stream format stay on each device and are not stored.
@@ -42,7 +45,18 @@ On a server of STRATO AG in Germany (European Union), only reachable over an enc
 - What you watch is not sent anywhere except as part of your own lists above, and the title that is playing
   right now (removed minutes after it stops).
 - Your streams, channel lists and guides go directly from your provider to your device, not through our server.
-- No analytics, crash reporting, advertising or tracking identifiers.
+- No analytics, crash reporting, advertising or tracking identifiers of our own.
+
+## Chromecast (iPhone and iPad)
+
+To find and control Chromecast devices, the iPhone and iPad apps include Google's Cast SDK. Google
+receives data from it that we don't see: diagnostic and performance data, a device identifier, an
+approximate location, and how the Cast buttons and screens are used. Google uses this to run the Cast
+service and for its own analytics; it is not linked to your RS-MediaPlayer account and is not used for
+tracking. Google's privacy policy applies to it: https://policies.google.com/privacy. When you cast, the app
+gives the Chromecast the stream's address, which includes your provider login, and the Chromecast
+loads the stream directly from your provider. AirPlay works the same way with the AirPlay device you pick. AirPlay (Apple) and Play on TV don't use
+Google's code. The Mac and Samsung TV apps don't include it.
 
 ## Subscriptions
 
